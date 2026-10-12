@@ -1,6 +1,3 @@
-# battery-decision-engine
-Physics-Informed Fourier Neural Operator Decision Engine for Zero-Plating Fast Charging of Lithium-Ion Batteries via Real-Time State Estimation &amp; Barrier-Riding Control.
-
 # Physics-Informed Battery Decision Engine
 
 [[https://img.shields.io/badge/License-MIT-yellow.svg]](https://opensource.org/licenses/MIT)
