@@ -22,11 +22,20 @@ Official open-source repository for the paper:
 
 ## 📁 Repository Structure
 ```text
+├── models/              # Pre-trained FNO-1D model weights (.pt)
+│   ├── fno_battery_surrogate_master_v5.pt
+│   └── fno_surrogate_adaptation_copy.pt
+├── notebooks/           # End-to-end reproducible research pipeline
+│   ├── 01_pybamm_data_generation.ipynb
+│   ├── 02_fno_surrogate_training.ipynb
+│   ├── 03_esmda_state_observer.ipynb
+│   ├── 04_barrier_riding_nmpc.ipynb
+│   ├── 05_oxford_hardware_validation.ipynb
+│   └── 06_rwth_hardware_validation.ipynb
+├── figures/             # High-resolution publication benchmark figures (Figs 1–5)
 ├── src/
-│   ├── models/          # 1D Fourier Neural Operator (FNO-1D) architecture
-│   ├── observers/       # ES-MDA Bayesian data assimilation
-│   ├── control/         # Barrier-Riding NMPC optimal controller
-│   └── physics/         # Continuum DFN PyBaMM solver interface
-├── notebooks/           # Interactive evaluation and hardware validation notebooks
-├── data/                # Normalization statistics and dataset download instructions
-└── figures/             # High-resolution benchmark figures
+│   └── models/          # Standalone FNO-1D PyTorch architecture (fno1d.py)
+├── requirements.txt     # Python environment dependencies
+├── LICENSE              # MIT License
+└── README.md
+```
